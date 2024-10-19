@@ -1,40 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Hotel Name Reservation System
+
+This is a hotel reservation system built using [Next.js](https://nextjs.org/), designed to offer seamless online booking experiences for guests. The project is currently in development and serves as the foundation for a modern, responsive, and fast hotel booking platform.
+
+## Features
+
+- **Responsive Design**: Optimized for all devices, including mobile, tablet, and desktop.
+- **Dynamic Image Handling**: Utilizes Next.js' `next/image` for optimized and fast-loading images.
+- **Interactive Booking System**: Users can easily browse room availability and make reservations in real-time.
+- **API Integration**: Ready for integration with external booking APIs or your hotel's internal systems.
+- **SEO Optimization**: Built-in SEO practices to ensure better visibility on search engines.
+- **Fast Performance**: Leveraging Next.js for optimal page loading speeds.
 
 ## Getting Started
 
-First, run the development server:
+To get started with development, follow the steps below:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   ```bash
+   git clone https://github.com/your-username/your-repo.git
+   cd your-repo
+   ```
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+2. Install the dependencies:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+3. Run the development server:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-## Learn More
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the live development version.
 
-To learn more about Next.js, take a look at the following resources:
+You can start editing the project by modifying `app/page.tsx`. The application will automatically update as you save changes.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## API Routes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- API routes are accessible at [http://localhost:3000/api/\*](http://localhost:3000/api/*). You can edit or add new routes under the `app/api` directory.
 
-## Deploy on Vercel
+## Configuration and Customization
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Font Optimization**: This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically load and optimize Google Fonts (like Inter), ensuring a clean and professional design.
+- **Images**: We leverage Next.js’ built-in image optimization with support for external sources like Unsplash.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Deployment
+
+This project will be deployed soon...
+
+## Learning Resources
+
+To learn more about Next.js, refer to the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) – learn about Next.js features and API.
+- [Next.js GitHub Repository](https://github.com/vercel/next.js) – contributions and feedback are welcome!
