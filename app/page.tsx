@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import FeaturedRooms from "@/components/FeaturedRooms";
 import Amenities from "@/components/Amenities";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <FeaturedRooms />
       <Amenities />
+      <Testimonials />
     </div>
   );
 }
