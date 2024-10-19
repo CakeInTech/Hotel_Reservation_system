@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Testimonials from "@/components/Testimonials";
 
 export default function AboutPage() {
   return (
@@ -6,7 +7,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <div className="relative h-[400px] mb-8">
         <Image
-          src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+          src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
           alt="Hotel Name Hero"
           fill
           style={{ objectFit: "cover" }}
@@ -56,37 +57,7 @@ export default function AboutPage() {
 
       {/* Testimonials Section */}
       <div className="mt-8">
-        <h2 className="text-3xl font-semibold mb-6 text-center text-white-700">
-          What Our Guests Say
-        </h2>
-        <div className="flex flex-wrap gap-6 justify-center">
-          <div className="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 flex-1 max-w-md">
-            <p className="text-gray-700 italic">
-              &quot;Absolutely wonderful experience! The staff was
-              amazing.&quot;
-            </p>
-            <p className="mt-4 font-semibold text-gray-800">- Guest Name</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 flex-1 max-w-md">
-            <p className="text-gray-700 italic">
-              &quot;Beautiful hotel with stunning views. Highly recommend!&quot;
-            </p>
-            <p className="mt-4 font-semibold text-gray-800">- Guest Name</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 flex-1 max-w-md">
-            <p className="text-gray-700 italic">
-              &quot;The best hospitality experience I&apos;ve ever had!&quot;
-            </p>
-            <p className="mt-4 font-semibold text-gray-800">- Guest Name</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 flex-1 max-w-md">
-            <p className="text-gray-700 italic">
-              &quot;A true gem in the heart of Kenya! Will definitely
-              return.&quot;
-            </p>
-            <p className="mt-4 font-semibold text-gray-800">- Guest Name</p>
-          </div>
-        </div>
+        <Testimonials /> {/* Use the Testimonials component here */}
       </div>
 
       {/* Unique Features Section */}
