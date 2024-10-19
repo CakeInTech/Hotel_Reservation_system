@@ -51,7 +51,30 @@ const rooms = [
 export default function RoomsPage() {
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-8">Our Rooms</h1>
+      <div className="relative h-[300px] md:h-[400px] flex items-center justify-center">
+        <Image
+          src="https://images.unsplash.com/photo-1713192704825-74a0017f585d?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Hotel Background"
+          fill
+          style={{ objectFit: "cover" }}
+          className="brightness-50"
+        />
+        <div className="absolute inset-0 bg-black opacity-50" />
+        <h2 className="absolute inset-0 flex items-center justify-center text-white text-2xl md:text-4xl font-bold p-4 text-center">
+          Experience Luxury Like Never Before
+        </h2>
+      </div>
+
+      <div className="bg-blue-500 text-white p-4 rounded-lg mt-6 md:mt-8 text-center">
+        <h2 className="text-sm md:text-lg font-semibold">
+          Book Now and Get 20% Off!
+        </h2>
+        <p className="text-xs md:text-sm">
+          Limited time offer for direct bookings only.
+        </p>
+      </div>
+
+      <h1 className="text-3xl font-bold my-8">Our Rooms</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {rooms.map((room) => (
           <Card key={room.id}>
@@ -71,6 +94,11 @@ export default function RoomsPage() {
               <CardDescription className="mt-2">
                 {room.description}
               </CardDescription>
+              <ul className="mt-2">
+                <li>🛏️ King Size Bed</li>
+                <li>🌐 Free Wi-Fi</li>
+                <li>🚿 Ensuite Bathroom</li>
+              </ul>
               <p className="mt-2 font-semibold">From ${room.price} per night</p>
             </CardContent>
             <CardFooter>
