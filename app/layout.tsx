@@ -1,13 +1,32 @@
-import { Html, Head, Main, NextScript } from "next/document";
+import "./globals.css";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import { ThemeProvider } from "@/components/theme-provider";
 
-export default function Document() {
+const inter = Inter({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: "Hotel Name - Hotel Reservation System",
+  description: "Book your perfect stay in kenya with Hotel Name",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <Html lang="en">
-      <Head />
-      <body className="antialiased">
-        <Main />
-        <NextScript />
+    <html lang="en">
+      <body className={inter.className}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <main className="min-h-screen">{children}</main>
+        </ThemeProvider>
       </body>
-    </Html>
+    </html>
   );
 }
