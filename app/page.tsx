@@ -1,3 +1,11 @@
+import Hero from "@/components/Hero";
+import FeaturedRooms from "@/components/FeaturedRooms";
+
 export default function Home() {
-  return <h1>Welcome to Hotel</h1>;
+  return (
+    <div>
+      <Hero />
+      <FeaturedRooms />
+    </div>
+  );
 }
