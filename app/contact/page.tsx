@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import Image from "next/image";
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -49,7 +50,7 @@ export default function ContactPage() {
     <div className="container mx-auto px-4 py-8">
       <div className="mt-12">
         <h2 className="text-xl font-semibold mb-4 text-center">Our Office</h2>
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1560662105-57f8ad6ae2d1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Our office"
           className="w-full h-96 object-cover rounded-lg"

@@ -51,8 +51,8 @@ const Testimonials = () => {
                       <Image
                         src={testimonial.image}
                         alt={testimonial.name}
-                        layout="fill"
-                        objectFit="cover"
+                        fill
+                        style={{ objectFit: "cover" }}
                       />
                     </div>
                     <p className="text-lg mb-4">{testimonial.text}</p>
